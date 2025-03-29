@@ -1,21 +1,21 @@
 # Argos Translate
 [Demo](https://libretranslate.com) | [Website](https://www.argosopentech.com) | [Docs](https://argos-translate.readthedocs.io) |  [Forum](https://community.libretranslate.com/c/argos-translate/5) | [GitHub](https://github.com/argosopentech/argos-translate) | [PyPI](https://pypi.org/project/argostranslate/)
 
-**Open-source offline translation library written in Python**
+**Biblioteca de tradução de código aberto escrita em Python**
 
-Argos Translate uses [OpenNMT](https://opennmt.net/) for translations and can be used as either a Python library, command-line, or GUI application. Argos Translate supports installing language model packages which are zip archives with a ".argosmodel" extension containing the data needed for translation. [LibreTranslate](https://libretranslate.com) is an API and web-app built on top of Argos Translate.
+Argos Translate utiliza [OpenNMT](https://opennmt.net/) para as traduções e pode ser utilizado como biblioteca do Python, linha de comandos ou aplicação GUI. Argos Translate suporta a instalação de pacotes modelo de idiomas que são arquivos zip com a extensão ".argosmodel" que contém os dados necessários para a tradução. [LibreTranslate](https://libretranslate.com) é uma API e aplicação da Web criada no topo do Argos Translate.
 
-Argos Translate also manages automatically pivoting through intermediate languages to translate between languages that don't have a direct translation between them installed. For example, if you have a es → en and en → fr translation installed you are able to translate from es → fr as if you had that translation installed. This allows for translating between a wide variety of languages at the cost of some loss of translation quality.
+Argos Trañslate também gere automaticamente que gira pelos idiomas intermediários para traduzir entre os idiomas que não têm uma tradução direta entre eles instalados. Por exemplo, se tiver uma tradução de ES → EN e EN → FR instalada, poderá traduzir de ES → FR como se tivesse a tradução instalada. Isto permite traduzir entre uma ampla variedade de idiomas ao custo de alguma perda de qualidade da tradução.
 
-The [argospm-index](https://github.com/argosopentech/argospm-index) contains metadata and download links to access pre-trained Argos Translate models.
+O [argospm-index](https://github.com/argosopentech/argospm-index) contains metadata and download links to access pre-trained Argos Translate models.
 
-### Supported languages
-Arabic, Azerbaijani, Catalan, Chinese, Czech, Danish, Dutch, English, Esperanto, Finnish, French, German, Greek, Hebrew, Hindi, Hungarian, Indonesian, Irish, Italian, Japanese, Korean, Malay, Persian, Polish, Portuguese, Russian, Slovak, Spanish, Swedish, Turkish, Ukrainian, and more
+### Idiomas suportados
+Alemão, Árabe, Arzebajão, Catalão, Chinês, Checo, Dinamarquês, Eslovaco, Espanhol, Esperanto, Holandês, Inglês, Finnish, Francês, Grego, Hebrew, Indiano (Hindi), Húngaro, Indonesian, Irish, Italiano, Japonês, Coreano, Malay, Persa, Polaco, Português (Brazil), Português (Portugal), Russo, Sueco, Turco, Ucraniano, e muito mais.
 
-[Request a language](https://github.com/argosopentech/argos-translate/discussions/91)
+[Solicitar um idioma](https://github.com/argosopentech/argos-translate/discussions/91)
 
-## Installation
-### Install with Python
+## Instalação
+### Instalar com Python
 Argos Translate is available from [PyPI](https://pypi.org/project/argostranslate/) and can be easily installed or updated with [pip](https://pip.pypa.io/en/stable/installation/).
 
 ```
@@ -39,7 +39,7 @@ source env/bin/activate
 pip install -e .
 ```
 
-## Examples
+## Exemplos
 ### [Python](https://argos-translate.readthedocs.io/en/latest/py-modindex.html)
 
 ```python
@@ -65,7 +65,7 @@ print(translatedText)
 # '¡Hola Mundo!'
 ```
 
-### Command Line Interface
+### Interface da Linha de Comandos
 ```
 argospm update
 argospm install translate-en_de
@@ -117,7 +117,7 @@ The GUI code is in a [separate repository](https://github.com/argosopentech/argo
 - [Google Drive download](https://drive.google.com/drive/folders/11wxM3Ze7NCgOk_tdtRjwet10DmtvFu3i)
 
 
-### GPU Acceleration
+### Aceleração de GPU
 
 To enable GPU support, you need to set the `ARGOS_DEVICE_TYPE` env variable to `cuda` or `auto`.
 
@@ -128,14 +128,14 @@ Hola Mundo
 
 The above env variable passes the device type to [CTranslate2](https://github.com/OpenNMT/CTranslate2).
 
-### HTML Translation
+### Tradução de HTML
 The [translate-html](https://github.com/argosopentech/translate-html) library is built on top of Argos Translate and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and parses and translates HTML. The LibreTranslate API also has support for translating HTML.
 
 
-### Files Translation
+### Tradução de Ficheiros
 The [argos-translate-files](https://github.com/LibreTranslate/argos-translate-files) library is built on top of Argos Translate and parses and translates files. The LibreTranslate API also has support for translating files.
 
-## Uninstall
+## Desintalação
 
 ``` shell
 pip uninstall argostranslate
@@ -148,7 +148,7 @@ rm -r ~/.local/cache/argos-translate
 rm -r ~/.local/share/argos-translate
 ```
 
-## Related Projects
+## Projetos Relacionados
 - [LibreTranslate-py](https://github.com/argosopentech/LibreTranslate-py) - Python bindings for LibreTranslate
 - [MetalTranslate](https://github.com/argosopentech/MetalTranslate) - Customizable translation in C++
 - [LibreTranslate/Locomotive](https://github.com/LibreTranslate/Locomotive) - Toolkit for training/converting LibreTranslate compatible language models 🚂 
@@ -159,20 +159,20 @@ rm -r ~/.local/share/argos-translate
 - [LibreTranslator](https://gitlab.com/BeowuIf/libretranslator) - LibreTranslate Android app
 - [LiTranslate](https://community.libretranslate.com/t/litranslate-ios-app/333) - iOS LibreTranslate client
 
-## Contributing
-Contributions are welcome! Available issues are on the [GitHub issues page](https://github.com/argosopentech/argos-translate/issues). Contributions of code, data, and pre-trained models can all be accepted.
+## Colaboração
+As colaborações são bem-vindas! Available issues are on the [GitHub issues page](https://github.com/argosopentech/argos-translate/issues). Contributions of code, data, and pre-trained models can all be accepted.
 
-## Support
+## Apoio
 For support please use the [LibreTranslate Forum](https://community.libretranslate.com/c/argos-translate/5) or [GitHub Issues](https://github.com/argosopentech/argos-translate/issues).
 
 For questions about [CTranslate2](https://github.com/OpenNMT/CTranslate2) or general machine translation research the [OpenNMT Forum](https://forum.opennmt.net/) is a good resource.
 
-## Services
+## Serviços
 Custom models trained on your own data are available for $1000/language (negotiable).
 
 [I am also available for hire](https://www.argosopentech.com/about/) to do support, consulting, or custom software development.
 
-## Donate
+## Doar
 If you find this software useful donations are greatly appreciated and help to make this project sustainable.
 - [GitHub Sponsor](https://github.com/sponsors/argosopentech)
 - [PayPal](https://www.paypal.com/biz/fund?id=MCCFG437JP9PJ)
@@ -190,8 +190,8 @@ You can help support Argos Translate financially by purchasing hosting through t
 - [Sharktech](https://portal.sharktech.net/aff.php?aff=1181) - Cheap bandwith
 - [Time4VPS](https://www.time4vps.com/?affid=6929) - Cheap storage
 
-## Contributing
+## Contribuição
 Contributions are welcome! Bug reports, pull requests, documentation writing, and feature ideas are all appreciated.
 
-## License
+## Licença
 Argos Translate is dual licensed under either the [MIT License](https://github.com/argosopentech/argos-translate/blob/master/LICENSE) or [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
